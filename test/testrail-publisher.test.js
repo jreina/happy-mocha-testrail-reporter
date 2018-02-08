@@ -1,13 +1,15 @@
-const { describe, it } = require('mocha');
-const { expect } = require('chai');
+var Mocha = require('mocha');
+const reporter = require('../lib/reporter');
+const reporterOptions = {
+  reporter,
+  suiteName: 'suiteName',
+  domain: 'domain',
+  username: 'username',
+  password: 'password',
+  projectId: 'projectId'
+};
+var mocha = new Mocha({ reporter, reporterOptions });
 
-describe('dummy test suite', () => {
-  describe('dummy test sub suite', () => {
-    it('should return -1 when the value is not present', () => {
-      expect([1, 2, 3].indexOf(4)).to.deep.equal(-1);
-    });
-    it('should return -1 when the value is not present', () => {
-      expect([1, 2, 3].indexOf(4)).to.deep.equal(-1);
-    });
-  });
-});
+mocha.addFile('./test/reporter.spec.js');
+
+mocha.run();
