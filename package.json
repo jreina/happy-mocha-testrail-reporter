@@ -1,42 +1,25 @@
 {
   "name": "mocha-testrail-advanced-reporter",
   "version": "1.0.1",
-  "description": "A mocha reporter that writes to testrail creating suites, tests and runs where necissary",
+  "description":
+    "A mocha reporter that writes to testrail creating suites, tests and runs where necissary",
   "main": "index.js",
   "private": false,
-  "keywords": [
-    "mocha",
-    "testrail",
-    "advanced",
-    "reporter"
-  ],
+  "keywords": ["mocha", "testrail", "advanced", "reporter"],
   "author": {
     "name": "Joe Hughes",
-    "email": "joe@joehughes.org"
+    "email": "johnny.r.reina@gmail.com"
   },
   "license": "MIT",
   "readmeFilename": "README.md",
   "repository": {
     "type": "git",
-    "url": "https://github.com/CommodoreBeard/mocha-testrail-advanced-reporter"
+    "url": "https://github.com/jreina/mocha-testrail-advanced-reporter"
   },
   "bugs": {
-    "url": "https://github.com/CommodoreBeard/mocha-testrail-advanced-reporter/issues"
+    "url": "https://github.com/jreina/mocha-testrail-advanced-reporter/issues"
   },
-  "scripts": {
-    "test": "nyc --reporter=lcov mocha --recursive && nyc report",
-    "lint": "eslint .",
-    "prettier": "prettier --single-quote --write \"{*.js,!(node*)**/*.js}\"",
-    "commitmsg": "commitlint -e",
-    "precommit": "lint-staged"
-  },
-  "lint-staged": {
-    "*.js": [
-      "npm run prettier",
-      "npm run lint",
-      "git add"
-    ]
-  },
+  "scripts": {},
   "dependencies": {
     "lodash": "^4.17.4",
     "mocha": "^4.1.0",
@@ -46,16 +29,10 @@
     "mocha": "^4"
   },
   "devDependencies": {
-    "@commitlint/cli": "^6.0.2",
-    "@commitlint/config-angular": "^6.0.2",
     "chai": "^4.1.2",
     "eslint": "^4.11.0",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-config-prettier": "^2.8.0",
-    "eslint-plugin-import": "^2.8.0",
-    "husky": "^0.14.3",
-    "lint-staged": "^6.0.0",
-    "prettier": "^1.10.2",
-    "nyc": "^11.4.1"
+    "eslint-plugin-import": "^2.8.0"
   }
 }

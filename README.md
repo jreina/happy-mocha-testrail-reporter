@@ -1,23 +1,31 @@
 # TestRail Reporter for Mocha
+
+This is a fork of [CommodoreBeard/mocha-testrail-advanced-reporter](https://github.com/CommodoreBeard/mocha-testrail-advanced-reporter).
+
 Another reporter for mocha that publishes to TestRail. However, this reporter will create suites, sections, cases, runs and results where necessary, by matching strings from Mocha.
 
 ## Motivation
+
 I had a need to publish test results from Mocha in TestRail, I could not find a reporter that would match `test.name` from Mocha with `case.title` in TestRail and create one if needed, so out of frustration this reporter was born.
 
 ## Installation
+
 ```bash
 $ npm install mocha-testrail-advanced-reporter --save-dev
 ```
 
 ## Usage
+
 Ensure that your TestRail installation API is enabled and generate your API keys. See http://docs.gurock.com/
 
 Run mocha with mocha-testrail-advanced-reporter:
+
 ```bash
 $ mocha test --reporter mocha-testrail-adanced-reporter --reporter-options domain=instance.testrail.net,username=test@example.com,password=12345678,projectId=1,suiteName="A Suite"
 ```
 
 or use a mocha.options file
+
 ```bash
 mocha --opts mocha-testrail.opts build/test
 --recursive
@@ -42,6 +50,7 @@ Creating necessary Testrail artifacts...
 Finished publishing
 Test Run: https://instance.testrail.net/index.php?/runs/view/1
 ```
+
 **Skipped tests will NOT be included in the results published to Testrail.**
 
 ## Options
