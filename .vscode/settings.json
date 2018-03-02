@@ -1,0 +1,5 @@
+{
+  "mocha.options": {
+    "reporter": "lib/reporter.js"
+  }
+}
