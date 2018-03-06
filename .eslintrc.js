@@ -9,6 +9,9 @@ module.exports = {
     'linebreak-style': 0,
     'prefer-arrow-callback': 0,
     'func-names': 0,
-    'no-unused-expressions': 0
+    'no-unused-expressions': 0,
+    'no-underscore-dangle': 0,
+    'arrow-body-style': 0,
+    camelcase: 0
   }
 };
