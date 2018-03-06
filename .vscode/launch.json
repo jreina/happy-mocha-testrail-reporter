@@ -7,9 +7,9 @@
     {
       "type": "node",
       "request": "launch",
-      "name": "Launch Program",
-      "program": "${workspaceFolder}\\node_modules\\mocha\\bin\\_mocha",
-      "args": ["--inspect-brk", "${workspaceFolder}\\test\\reporter.spec.js"]
+      "name": "Debug Jasmine tests",
+      "program": "${workspaceRoot}\\node_modules\\jasmine\\bin\\jasmine.js",
+      "args": ["test\\reporter.spec.js"]
     }
   ]
 }
