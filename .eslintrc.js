@@ -2,7 +2,8 @@ module.exports = {
   extends: ['airbnb-base', 'prettier'],
   env: {
     node: true,
-    mocha: true
+    mocha: true,
+    jasmine: true
   },
   rules: {
     'no-console': 0,
