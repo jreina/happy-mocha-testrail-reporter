@@ -1,19 +1,16 @@
 const { expect } = require('chai');
 
-describe('dummy test suite', function() {
-  it('should pass', function() {
-    expect([1, 2, 3]).to.contain.members([2]);
-  });
-  it('should fail', function() {
-    expect([1, 2, 3]).to.contain.members([4]);
-  });
-});
-
-describe('dummy test suite 2', function() {
-  it('should pass', function() {
-    expect([1, 2, 3]).to.contain.members([2]);
-  });
-  it('should fail', function() {
-    expect([1, 2, 3]).to.contain.members([4]);
+describe('Foo', function() {
+  describe('Bar', function() {
+    describe('Baz', function() {
+      it('should pass', function() {
+        expect(1).to.equal(1);
+      });
+      it('should fail', function() {
+        expect(1).to.equal(2);
+      });
+      it('should be pending');
+      it.skip('should be skipped');
+    });
   });
 });
