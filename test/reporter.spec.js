@@ -10,7 +10,8 @@ const _reporterOptions = {
   domain: process.env.DOMAIN,
   username: process.env.USER,
   password: process.env.PASS,
-  projectId: parseInt(process.env.PROJECT_ID, 10)
+  projectId: parseInt(process.env.PROJECT_ID, 10),
+  tag: 'Generic Test Run X'
 };
 
 fdescribe('Advanced TestRail Reporter for Mocha', function() {
