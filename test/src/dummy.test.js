@@ -26,6 +26,28 @@ describe('Foo', function() {
         expect(actual).to.deep.equal(expected);
       });
       it('should be a new case');
+      it('should take like 400ms', function(done) {
+        setTimeout(done, 400);
+      });
+
+      describe('Foo', function() {
+        describe('Bar', function() {
+          describe('Baz', function() {
+            it('Should be in Foo->Bar->Baz->Foo->Bar->Baz', function() {});
+          });
+        });
+      });
     });
   });
+  describe('Foo', function() {
+    it('should be in Foo->Foo');
+  });
+});
+describe('[Foo.Bar.Baz] This is just a title', function() {
+  it(
+    'should also be in Foo->Bar->Baz, except this uses a single describe block'
+  );
+});
+describe('section b', function() {
+  it('should be at the root of section b');
 });
