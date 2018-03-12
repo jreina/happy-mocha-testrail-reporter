@@ -25,6 +25,7 @@ describe('Foo', function() {
         ];
         expect(actual).to.deep.equal(expected);
       });
+      it('should be a new case');
     });
   });
 });
