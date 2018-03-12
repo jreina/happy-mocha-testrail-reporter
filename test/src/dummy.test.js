@@ -11,6 +11,20 @@ describe('Foo', function() {
       });
       it('should be pending');
       it.skip('should be skipped');
+      it('should report a diff', function() {
+        this.meta = { input: { foo: 'bar' } };
+        const expected = [
+          { name: 'Susan' },
+          { name: 'Edward' },
+          { name: 'Sara' }
+        ];
+        const actual = [
+          { name: 'Susan' },
+          { name: 'Edward', age: 32 },
+          { name: 'Sara' }
+        ];
+        expect(actual).to.deep.equal(expected);
+      });
     });
   });
 });
