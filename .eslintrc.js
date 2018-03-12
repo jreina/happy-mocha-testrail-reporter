@@ -13,6 +13,7 @@ module.exports = {
     'no-unused-expressions': 0,
     'no-underscore-dangle': 0,
     'arrow-body-style': 0,
+    'no-warning-comments': 2,
     camelcase: 0
   }
 };
