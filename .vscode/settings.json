@@ -1,0 +1,6 @@
+{
+  "mocha.options": {
+    "reporter": "lib/reporter.js"
+  },
+  "editor.tabSize": 2
+}
