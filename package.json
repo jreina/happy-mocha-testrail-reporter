@@ -1,37 +1,35 @@
 {
   "name": "mocha-testrail-advanced-reporter",
-  "version": "1.0.1",
-  "description": "A fork of the mocha reporter that writes to testrail creating suites, tests and runs where necessary",
+  "version": "2.0.1",
+  "description":
+    "A fork of the mocha reporter that writes to testrail creating tests and runs where necessary",
   "main": "index.js",
   "private": false,
-  "keywords": [
-    "mocha",
-    "testrail",
-    "advanced",
-    "reporter"
+  "keywords": ["mocha", "testrail", "advanced", "reporter"],
+  "contributors": [
+    {
+      "name": "Joe Hughes",
+      "email": "joe@joehughes.org"
+    },
+    {
+      "name": "Johnny Reina",
+      "email": "johnny.r.reina@gmail.com"
+    }
   ],
-  "author": {
-    "name": "Joe Hughes",
-    "email": "joe@joehughes.org"
-  },
   "license": "MIT",
   "readmeFilename": "README.md",
   "repository": {
     "type": "git",
-    "url": "https://github.com/CommodoreBeard/mocha-testrail-advanced-reporter"
+    "url": "https://github.com/jreina/mocha-testrail-advanced-reporter"
   },
   "bugs": {
-    "url": "https://github.com/CommodoreBeard/mocha-testrail-advanced-reporter/issues"
+    "url": "https://github.com/jreina/mocha-testrail-advanced-reporter/issues"
   },
   "scripts": {
     "test": "jasmine"
   },
   "lint-staged": {
-    "*.js": [
-      "npm run prettier",
-      "npm run lint",
-      "git add"
-    ]
+    "*.js": ["npm run prettier", "npm run lint", "git add"]
   },
   "dependencies": {
     "diff": "^3.5.0",
