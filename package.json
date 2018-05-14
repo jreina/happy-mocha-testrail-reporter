@@ -1,11 +1,15 @@
 {
-  "name": "mocha-testrail-advanced-reporter",
+  "name": "happy-mocha-testrail-reporter",
   "version": "2.0.3",
-  "description":
-    "A fork of the mocha reporter that writes to testrail creating tests and runs where necessary",
+  "description": "A fork of the mocha reporter that writes to testrail creating tests and runs where necessary",
   "main": "index.js",
   "private": false,
-  "keywords": ["mocha", "testrail", "advanced", "reporter"],
+  "keywords": [
+    "mocha",
+    "testrail",
+    "advanced",
+    "reporter"
+  ],
   "contributors": [
     {
       "name": "Joe Hughes",
@@ -28,20 +32,15 @@
   "scripts": {
     "test": "jasmine"
   },
-  "lint-staged": {
-    "*.js": ["npm run prettier", "npm run lint", "git add"]
-  },
-  "scripts": {},
   "dependencies": {
     "diff": "^3.5.0",
     "dotenv": "^5.0.1",
-    "mocha": "^4.1.0",
     "moment": "^2.21.0",
     "ramda": "^0.25.0",
     "testrail-api": "^1.3.2"
   },
   "peerDependencies": {
-    "mocha": "^4"
+    "mocha": "^5"
   },
   "devDependencies": {
     "chai": "^4.1.2",
