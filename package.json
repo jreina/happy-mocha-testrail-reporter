@@ -1,6 +1,6 @@
 {
   "name": "happy-mocha-testrail-reporter",
-  "version": "2.0.3",
+  "version": "2.0.5",
   "description": "A fork of the mocha reporter that writes to testrail creating tests and runs where necessary",
   "main": "index.js",
   "private": false,
